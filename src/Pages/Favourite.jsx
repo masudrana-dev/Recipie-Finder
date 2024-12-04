@@ -1,6 +1,7 @@
+import RecipieCard from "../Component/RecipieCard"
 
 const Favourite = () => {
-    const fav = false;
+    const fav = true;
     return (
         <div className="bg-[#faf9fb] flex-1 p-10 min-h-screen">
             <div className="max-w-screen-lg mx-auto">
@@ -10,6 +11,19 @@ const Favourite = () => {
                         <img src="/404.svg" className="h-3/4" alt="404svg" />
                     </div>
                 )}
+                {
+                    fav && (
+                        <div className="grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                            <RecipieCard />
+                            <RecipieCard />
+                            <RecipieCard />
+                            <RecipieCard />
+                            <RecipieCard />
+                            <RecipieCard />
+                            <RecipieCard />
+                        </div>
+                    )
+                }
             </div>
         </div>
     )

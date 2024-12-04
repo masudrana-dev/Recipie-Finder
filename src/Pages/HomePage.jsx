@@ -1,4 +1,4 @@
-import { Heart, HeartPulse, Search, Soup } from "lucide-react"
+import { Search } from "lucide-react"
 import RecipieCard from "../Component/RecipieCard"
 
 const HomePage = () => {
